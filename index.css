@@ -148,7 +148,7 @@ li{
   list-style-type: none;
 }
 .hello{
-  background-image: url('img/start-image.jpg');
+  background-image: url('img/start-image_small.jpg');
   display: flex;
   align-items: center;
   justify-content: center;
