@@ -254,6 +254,7 @@ li{
   background-color: orange;
   border-color: black;
   color: #000000;
+  cursor: pointer;
 }
 .ad a button:hover{
   background-color: #ffc25e;
@@ -277,4 +278,7 @@ footer h1{
 footer p{
   font-size: 1.4rem;
   margin: 15px;
+}
+.warning{
+  font-size: 1.6rem;
 }

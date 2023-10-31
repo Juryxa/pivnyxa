@@ -2,122 +2,226 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Пивнуха у Славяна</title>
+  <link rel="stylesheet" href="goods.css" type="text/css">
+  <link rel="icon" href="img/main_beer.png" type="image/x-icon">
 </head>
 <body>
   <header>
-    <div class="logo"></div>
+    <div class="logo">
+      <a href="index.html"><img width="40" height="40" src="img/main_beer.png" alt=""></a>
+    </div>
     <nav>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="goods.html">Товары</a></li>
-        <li>
-          <a href="basket.html">
-            <img width="16" height="16" src="img/shoppingcart_80945.svg" alt="Корзина">
-          </a>
-        </li>
-      </ul>
+      <div class="wide_menu">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="goods.html">Товары</a></li>
+          <li>
+            <a href="basket.html">
+              <img width="40" height="40" src="img/basket.png" alt="Корзина">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="mob_menu">
+        <div class="dropdown">
+          <ul class="dropdown_content">
+            <li><img class="bar" width="40" height="40" src="img/3bar.png" alt=""></li>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="goods.html">Товары</a></li>
+            <li>
+              <a class="basket" href="basket.html">
+                <img src="img/basket.png" alt="Корзина">
+              </a>
+            </li>
+          </ul>
+          <script src="sidebar.js"></script>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
     <h1>Каталог</h1>
-    <div>
-      <table>
-        <tbody>
-        <tr>
-          <td></td>
-          <td>
-            <ul>
-
-            </ul>
-          </td>
-        </tr>
-        </tbody>
-    </table>
-    </div>
-    <div>
-      <table>
-        <tbody>
-        <tr>
-          <td></td>
-          <td>
-            <ul>
-
-            </ul>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <div>
-      <table>
-        <tbody>
-        <tr>
-          <td></td>
-          <td>
-            <ul>
-
-            </ul>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <div>
-      <table>
-        <tbody>
-        <tr>
-          <td></td>
-          <td>
-            <ul>
-
-            </ul>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <div>
-      <table>
-        <tbody>
-        <tr>
-          <td></td>
-          <td>
-            <ul>
-
-            </ul>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <div>
-      <table>
-        <tbody>
-        <tr>
-          <td></td>
-          <td>
-            <ul>
-
-            </ul>
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-    <div>
-      <table>
-        <tbody>
-        <tr>
-          <td></td>
-          <td>
-            <ul>
-
-            </ul>
-          </td>
-        </tr>
-        </tbody>
-      </table>
+    <div class="flexbox">
+      <div class="section">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <img src="https://2po2.ru/upload/iblock/844/8446f3cb444e34b8888226bafea9f333.png" alt="светлое">
+              </td>
+              <td>
+                <ul>
+                  <li>Светлое разливное</li>
+                  <li class="price">100р./л</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <input class="number" type="number" step="0.5" value="1" min="0.5" max="500">
+                <button class="submit_basket">В корзину</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="section">
+        <table>
+          <tbody>
+          <tr>
+            <td>
+              <img src="https://2po2.ru/upload/iblock/919/919a5fbc01f49bea383dc7095ed2f39c.png" alt="темное">
+            </td>
+            <td>
+              <ul>
+                <li>Темное разливное</li>
+                <li class="price">100р./л</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input class="number" type="number" step="0.5" value="1" min="0.5" max="500">
+              <button class="submit_basket">В корзину</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="section">
+        <table>
+          <tbody>
+          <tr>
+            <td>
+              <img src="https://2po2.ru/upload/iblock/13f/13f71e91cc42490cac0e2c58e1eb116e.png" alt="пшеничное">
+            </td>
+            <td>
+              <ul>
+                <li>Пшеничное разливное</li>
+                <li class="price">100р./л</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input class="number" type="number" step="0.5" value="1" min="0.5" max="500">
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button class="submit_basket">В корзину</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="section">
+        <table>
+          <tbody>
+          <tr>
+            <td>
+              <img src="https://2po2.ru/upload/iblock/f21/f215758ea3cd7073dd1699c7638e7749.png" alt="чипсы">
+            </td>
+            <td>
+              <ul>
+                <li>Чипсы</li>
+                <li class="price">100р</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input class="number" type="number" step="1" value="1" min="1" max="20">
+              <button class="submit_basket">В корзину</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="section">
+        <table>
+          <tbody>
+          <tr>
+            <td>
+              <img src="https://2po2.ru/upload/iblock/100/100d5c73eaa33407bf5361c12022e81a.png" alt="гренки">
+            </td>
+            <td>
+              <ul>
+                <li>Гренки</li>
+                <li class="price">50р.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input class="number" type="number" step="1" value="1" min="1" max="20">
+              <button class="submit_basket">В корзину</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="section">
+        <table>
+          <tbody>
+          <tr>
+            <td>
+              <img src="img/buket.png" alt="пивной букет">
+            </td>
+            <td>
+              <ul>
+                <li>Пивной букет</li>
+                <li class="price">1000р.</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input class="number" type="number" step="1" value="1" min="1" max="20">
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <button class="submit_basket">В корзину</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="section">
+        <table>
+          <tbody>
+          <tr>
+            <td>
+              <img src="https://2po2.ru/upload/iblock/3db/3dbb65cf6dddcafa5cb3343fd5133b65.png" alt="квас">
+            </td>
+            <td>
+              <ul>
+                <li>Квас разливной</li>
+                <li class="price">100р./л</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input class="number" type="number" step="0.5" value="1" min="0.5" max="500">
+              <button class="submit_basket">В корзину</button>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </main>
   <footer>
@@ -126,11 +230,12 @@
       Более 30 сортов пива, которые мы можем наливать единовременно и которые никоим образом
       не похожи на то, что вы пили ранее или покупали в магазине!
 
-      Работаем исключительно для Вас по адресу:
-      г. Звенигород, мкр. Пронина, корпус 2
-      Понедельник - Воскресение с 11:00 до 23:00
-      Номер телефона раковарни ☎️ +7 (977) 277 ** **
+      Работаем исключительно для Вас по адресу:<br>
+      г. Звенигород, мкр. Пронина, корпус 2<br>
+      Понедельник - Воскресение с 11:00 до 23:00<br>
+      Номер телефона раковарни ☎️ +7 (977) 277 ** **<br>
       Тел. +7 (925) 900 ** **, Россия, Звенигород, мкр.Пронина | Пивнуха у Славяна</p>
+    <p class="warning"><strong>Чрезмерное употребление алкоголя вредит вашему здоровью</strong></p>
     <div>
 
     </div>
