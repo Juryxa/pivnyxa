@@ -231,6 +231,15 @@ li{
     font-size: 1rem;
   }
 }
+@media screen and (orientation: landscape) {
+  header{
+    height: 60px;
+  }
+  .ad{
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+  }
+}
 .ad a{
   cursor: pointer;
   align-content: center;
@@ -243,6 +252,7 @@ li{
   border-radius: 15px;
   font-weight: bold;
   background-color: orange;
+  border-color: black;
   color: #000000;
 }
 .ad a button:hover{
