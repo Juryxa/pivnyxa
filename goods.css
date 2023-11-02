@@ -22,6 +22,12 @@ header{
   position: fixed;
   z-index: -1;
 }
+.goods_a{
+  border-bottom: 3px wheat solid;
+}
+.wide_menu a:hover{
+  text-shadow: 0 0 10px white;
+}
 .logo{
   margin: 10px 0 0 30px;
 }
@@ -100,9 +106,6 @@ li{
     height: 100px;
     width: 100px;
   }
-  .hello .ad{
-    font-size: 1rem;
-  }
 }
 @media screen and (orientation: landscape) {
   header {
@@ -164,6 +167,7 @@ main h1{
   padding: 10px;
   font-weight: 900;
   text-align: center;
+  width: 50%;
 }
 .submit_basket{
   padding: 10px;

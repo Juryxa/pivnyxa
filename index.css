@@ -123,6 +123,12 @@ header{
   position: fixed;
   z-index: -1;
 }
+.main_a{
+  border-bottom: 3px wheat solid;
+}
+.wide_menu a:hover{
+  text-shadow: 0 0 10px wheat;
+}
 .logo{
   margin: 10px 0 0 30px;
 }

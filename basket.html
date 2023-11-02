@@ -2,26 +2,96 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Пивнуха у Славяна</title>
+  <link rel="stylesheet" href="basket.css" type="text/css">
+  <link rel="icon" href="img/main_beer.png" type="image/x-icon">
 </head>
 <body>
-  <header>
-    <div class="logo"></div>
-    <nav>
+<header>
+  <div class="logo">
+    <a href="index.html"><img width="40" height="40" src="img/main_beer.png" alt=""></a>
+  </div>
+  <nav>
+    <div class="wide_menu">
       <ul>
         <li><a href="index.html">Главная</a></li>
         <li><a href="goods.html">Товары</a></li>
         <li>
-          <a href="basket.html">
-            <img width="16" height="16" src="img/shoppingcart_80945.svg" alt="Корзина">
+          <a href="basket.html" class="basket_a">
+            <img width="40" height="40" src="img/basket.png" alt="Корзина">
           </a>
         </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+    <div class="mob_menu">
+      <div class="dropdown">
+        <ul class="dropdown_content">
+          <li><img class="bar" width="40" height="40" src="img/3bar.png" alt=""></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="goods.html">Товары</a></li>
+          <li>
+            <a class="basket" href="basket.html">
+              <img src="img/basket.png" alt="Корзина">
+            </a>
+          </li>
+        </ul>
+        <script src="sidebar.js"></script>
+      </div>
+    </div>
+  </nav>
+</header>
   <main>
     <h1>Корзина</h1>
-<!--    тут будут появляться блоки с заказами-->
+    <div class="products">
+      <div class="product">
+        <div class="img_and_quantity">
+          <img src="https://2po2.ru/upload/iblock/844/8446f3cb444e34b8888226bafea9f333.png" alt="светлое">
+        </div>
+        <div class="name_and_price">
+          <p class="name">Светлое разливное</p>
+          <p class="price">100р./л</p>
+        </div>
+        <div class="remove_item_mob">×</div>
+        <div class="quantity">
+          <span class="minus_plus minus">&minus;</span>
+          <input class="text" type="text" value="1">
+          <span class="minus_plus plus">+</span>
+        </div>
+        <div class="total">
+          <p>100 р.</p>
+        </div>
+        <div class="remove_item">×</div>
+      </div>
+      <div class="product">
+        <div class="img_and_quantity">
+          <img src="https://2po2.ru/upload/iblock/100/100d5c73eaa33407bf5361c12022e81a.png" alt="светлое">
+        </div>
+        <div class="name_and_price">
+          <p class="name">Гренки</p>
+          <p class="price">50 р.</p>
+        </div>
+        <div class="remove_item_mob">×</div>
+        <div class="quantity">
+          <span class="minus_plus minus">&minus;</span>
+          <input class="text" type="text" value="1">
+          <span class="minus_plus plus">+</span>
+        </div>
+        <div class="total">
+          <p>50 р.</p>
+        </div>
+        <div class="remove_item">×</div>
+      </div>
+    </div>
+    <div class="in_total_send_flex">
+      <div class="in_total">Итого: 150 р.</div>
+      <div class="send">Отправить</div>
+    </div>
   </main>
+  <footer>
+    <p>Розничная продажа дистанционным способом алкогольной продукции в РФ запрещена. Нажимая "Отправить" вы соглашаетесь, что продажа будет осуществлена в фирменном магазине "Пивнуха у Славяна".</p>
+    <p>Мы не продаем алкогольную продукцию лицам младше 18 лет. При получении заказа просьба предъявить паспорт или иной документ, удостоверяющий возраст.</p>
+    <p class="warning"><strong>Чрезмерное употребление алкоголя вредит вашему здоровью</strong></p>
+  </footer>
 </body>
 </html>
