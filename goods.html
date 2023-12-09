@@ -45,172 +45,95 @@
     <h1>Каталог</h1>
     <div class="flexbox">
       <div class="section">
-        <table>
-          <tbody>
-            <tr>
-              <td>
-                <img src="https://2po2.ru/upload/iblock/844/8446f3cb444e34b8888226bafea9f333.png" alt="светлое">
-              </td>
-              <td>
-                <ul>
-                  <li>Светлое разливное</li>
-                  <li class="price">100р./л</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <td></td>
-              <td>
-                <input class="number" type="number" value="1">
-                <button class="submit_basket">В корзину</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <img class="card__image" src="img/8446f3cb444e34b8888226bafea9f333.png" alt="светлое">
+        <div class="not_img">
+          <span class="name">Светлое разливное</span>
+          <span class="price">100р./л</span>
+          <div class="quantity">
+            <span class="liquid minus_plus minus" data-id="light" data-direction="minus">&minus;</span>
+            <input class="liquid_text text" type="text" value="1" pattern="\d+(\.[0,5])?" >
+            <span class="liquid minus_plus plus" data-id="light" data-direction="plus">+</span>
+          </div>
+          <button class="submit_basket" data-id="light">В корзину</button>
+        </div>
       </div>
       <div class="section">
-        <table>
-          <tbody>
-          <tr>
-            <td>
-              <img src="https://2po2.ru/upload/iblock/919/919a5fbc01f49bea383dc7095ed2f39c.png" alt="темное">
-            </td>
-            <td>
-              <ul>
-                <li>Темное разливное</li>
-                <li class="price">100р./л</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input class="number" type="number" value="1">
-              <button class="submit_basket">В корзину</button>
-            </td>
-          </tr>
-          </tbody>
-        </table>
+        <img class="card__image" src="img/dark.png" alt="темное">
+        <div class="not_img">
+          <span class="name">Темное разливное</span>
+          <span class="price">100р./л</span>
+          <div class="quantity">
+            <span class="liquid minus_plus minus" data-id="dark" data-direction="minus">&minus;</span>
+            <input class="liquid_text text" type="text" value="1" pattern="\d+(\.[0,5])?" >
+            <span class="liquid minus_plus plus" data-id="dark" data-direction="plus">+</span>
+          </div>
+          <button class="submit_basket" data-id="dark">В корзину</button>
+        </div>
       </div>
       <div class="section">
-        <table>
-          <tbody>
-          <tr>
-            <td>
-              <img src="https://2po2.ru/upload/iblock/13f/13f71e91cc42490cac0e2c58e1eb116e.png" alt="пшеничное">
-            </td>
-            <td>
-              <ul>
-                <li>Пшеничное разливное</li>
-                <li class="price">100р./л</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input class="number" type="number" value="1">
-              <button class="submit_basket">В корзину</button>
-            </td>
-          </tr>
-          </tbody>
-        </table>
+        <img class="card__image" src="img/pshen.png" alt="пшеничное">
+        <div class="not_img">
+          <span class="name">Пшеничное разливное</span>
+          <span class="price">100р./л</span>
+          <div class="quantity">
+            <span class="liquid minus_plus minus" data-id="pshen" data-direction="minus">&minus;</span>
+            <input class="liquid_text text" type="text" value="1" pattern="\d+(\.[0,5])?" >
+            <span class="liquid minus_plus plus" data-id="pshen" data-direction="plus">+</span>
+          </div>
+          <button class="submit_basket" data-id="pshen">В корзину</button>
+        </div>
       </div>
       <div class="section">
-        <table>
-          <tbody>
-          <tr>
-            <td>
-              <img src="https://2po2.ru/upload/iblock/f21/f215758ea3cd7073dd1699c7638e7749.png" alt="чипсы">
-            </td>
-            <td>
-              <ul>
-                <li>Чипсы</li>
-                <li class="price">100р</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input class="number" type="number" value="1">
-              <button class="submit_basket">В корзину</button>
-            </td>
-          </tr>
-          </tbody>
-        </table>
+        <img class="card__image" src="img/potato.png" alt="чипсы">
+        <div class="not_img">
+          <span class="name">Чипсы</span>
+          <span class="price">100р.</span>
+          <div class="quantity">
+            <span class="non_liquid minus_plus minus" data-id="potato" data-direction="minus">&minus;</span>
+            <input class="non_liquid_text text" type="text" value="1" pattern="[0-9]{1,2}" >
+            <span class="non_liquid minus_plus plus" data-id="potato" data-direction="plus">+</span>
+          </div>
+          <button class="submit_basket" data-id="potato">В корзину</button>
+        </div>
       </div>
       <div class="section">
-        <table>
-          <tbody>
-          <tr>
-            <td>
-              <img src="https://2po2.ru/upload/iblock/100/100d5c73eaa33407bf5361c12022e81a.png" alt="гренки">
-            </td>
-            <td>
-              <ul>
-                <li>Гренки</li>
-                <li class="price">50р.</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input class="number" type="number" value="1">
-              <button class="submit_basket">В корзину</button>
-            </td>
-          </tr>
-          </tbody>
-        </table>
+        <img class="card__image" src="img/grenki.png" alt="гренки">
+        <div class="not_img">
+          <span class="name">Гренки</span>
+          <span class="price">50р.</span>
+          <div class="quantity">
+            <span class="non_liquid minus_plus minus" data-id="grenki" data-direction="minus">&minus;</span>
+            <input class="non_liquid_text text" type="text" value="1" pattern="[0-9]{1,2}" >
+            <span class="non_liquid minus_plus plus" data-id="grenki" data-direction="plus">+</span>
+          </div>
+          <button class="submit_basket" data-id="grenki">В корзину</button>
+        </div>
       </div>
       <div class="section">
-        <table>
-          <tbody>
-          <tr>
-            <td>
-              <img src="img/buket.png" alt="пивной букет">
-            </td>
-            <td>
-              <ul>
-                <li>Пивной букет</li>
-                <li class="price">1000р.</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input class="number" type="number" value="1">
-              <button class="submit_basket">В корзину</button>
-            </td>
-          </tr>
-          </tbody>
-        </table>
+        <img class="card__image" src="img/buket.png" alt="пивной букет">
+        <div class="not_img">
+          <span class="name">Пивной букет</span>
+          <span class="price">1000р.</span>
+          <div class="quantity">
+            <span class="non_liquid minus_plus minus" data-id="buket" data-direction="minus">&minus;</span>
+            <input class="non_liquid_text text" type="text" value="1" pattern="[0-9]{1,2}" >
+            <span class="non_liquid minus_plus plus" data-id="buket" data-direction="plus">+</span>
+          </div>
+          <button class="submit_basket" data-id="buket">В корзину</button>
+        </div>
       </div>
       <div class="section">
-        <table>
-          <tbody>
-          <tr>
-            <td>
-              <img src="https://2po2.ru/upload/iblock/3db/3dbb65cf6dddcafa5cb3343fd5133b65.png" alt="квас">
-            </td>
-            <td>
-              <ul>
-                <li>Квас разливной</li>
-                <li class="price">100р./л</li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>
-              <input class="number" type="number" value="1">
-              <button class="submit_basket">В корзину</button>
-            </td>
-          </tr>
-          </tbody>
-        </table>
+        <img class="card__image" src="img/kvas.png" alt="квас">
+        <div class="not_img">
+          <span class="name">Квас разливной</span>
+          <span class="price">100р./л</span>
+          <div class="quantity">
+            <span class="liquid minus_plus minus" data-id="kvas" data-direction="minus">&minus;</span>
+            <input class="liquid_text text" type="text" value="1" pattern="\d+(\.[0,5])?">
+            <span class="liquid minus_plus plus" data-id="kvas" data-direction="plus">+</span>
+          </div>
+          <button class="submit_basket" data-id="kvas">В корзину</button>
+        </div>
       </div>
     </div>
   </main>
@@ -230,5 +153,7 @@
 
     </div>
   </footer>
+  <script src="add_basket.js"></script>
+  <script src="quantity.js"></script>
 </body>
 </html>

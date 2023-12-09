@@ -43,55 +43,32 @@
 </header>
   <main>
     <h1>Корзина</h1>
-    <div class="products">
-      <div class="product">
-        <div class="img_and_quantity">
-          <img src="https://2po2.ru/upload/iblock/844/8446f3cb444e34b8888226bafea9f333.png" alt="светлое">
+    <div class="popup">
+      <div class="popup__container" id="popup_container">
+        <div class="popup__item">
+          <h1 class="popup__title">Оформление заказа</h1>
         </div>
-        <div class="name_and_price">
-          <p class="name">Светлое разливное</p>
-          <p class="price">100р./л</p>
+        <div class="popup__item" id="popup_product_list">
         </div>
-        <div class="remove_item_mob">×</div>
-        <div class="quantity">
-          <span class="minus_plus minus">&minus;</span>
-          <input class="text" type="text" value="1">
-          <span class="minus_plus plus">+</span>
+        <div class="popup__item">
+          <div class="popup__cost">
+            <h2 class="popup__cost-title">Итого</h2>
+            <output class="popup__cost-value" id="popup_cost">0р.</output>
+          </div>
         </div>
-        <div class="total">
-          <p>100 р.</p>
-        </div>
-        <div class="remove_item">×</div>
-      </div>
-      <div class="product">
-        <div class="img_and_quantity">
-          <img src="https://2po2.ru/upload/iblock/100/100d5c73eaa33407bf5361c12022e81a.png" alt="светлое">
-        </div>
-        <div class="name_and_price">
-          <p class="name">Гренки</p>
-          <p class="price">50 р.</p>
-        </div>
-        <div class="remove_item_mob">×</div>
-        <div class="quantity">
-          <span class="minus_plus minus">&minus;</span>
-          <input class="text" type="text" value="1">
-          <span class="minus_plus plus">+</span>
-        </div>
-        <div class="total">
-          <p>50 р.</p>
-        </div>
-        <div class="remove_item">×</div>
       </div>
     </div>
     <div class="in_total_send_flex">
-      <div class="in_total">Итого: 150 р.</div>
-      <div class="send">Отправить</div>
+      <div class="in_total"></div>
+      <div class="send">Оформить заказ</div>
     </div>
   </main>
   <footer>
-    <p>Розничная продажа дистанционным способом алкогольной продукции в РФ запрещена. Нажимая "Отправить" вы соглашаетесь, что продажа будет осуществлена в фирменном магазине "Пивнуха у Славяна".</p>
+    <p>Розничная продажа дистанционным способом алкогольной продукции в РФ запрещена. Нажимая "Оформить заказ" вы соглашаетесь, что продажа будет осуществлена в фирменном магазине "Пивнуха у Славяна".</p>
     <p>Мы не продаем алкогольную продукцию лицам младше 18 лет. При получении заказа просьба предъявить паспорт или иной документ, удостоверяющий возраст.</p>
     <p class="warning"><strong>Чрезмерное употребление алкоголя вредит вашему здоровью</strong></p>
   </footer>
+<script src="add_basket.js"></script>
+<script src="render_basket.js"></script>
 </body>
 </html>
