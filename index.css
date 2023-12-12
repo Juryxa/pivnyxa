@@ -81,6 +81,7 @@ body{
   background-color: #0092f3;
   border-color: #0032c5;
   color: black;
+  text-decoration: none;
   margin-bottom: 15px;
   cursor: pointer;
   font-size: 1.25rem;
@@ -194,14 +195,18 @@ li{
 }
 @media screen and (max-width: 400px) {
   .wide_menu{
-    visibility: hidden;
-    position: fixed;
-    z-index: -1;
+  display: none;
   }
   .bar{
     cursor: pointer;
     position: absolute;
     left: -45px;
+    top: 10px;
+  }
+  .basket_out{
+    cursor: pointer;
+    position: absolute;
+    left: -88px;
     top: 10px;
   }
   .mob_menu{
@@ -216,10 +221,14 @@ li{
     background-color: wheat;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     margin-right: 0;
     transition: 0.5s;
     transform: translateX(100%);
+  }
+  .dropdown_content li{
+    margin-bottom: 70px;
   }
   .dropdown_content_out{
     transform: translateX(0);

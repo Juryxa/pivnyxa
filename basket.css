@@ -87,10 +87,14 @@ li{
     background-color: wheat;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     margin-right: 0;
     transition: 0.5s;
     transform: translateX(100%);
+  }
+  .dropdown_content li{
+    margin-bottom: 70px;
   }
   .dropdown_content_out{
     transform: translateX(0);
