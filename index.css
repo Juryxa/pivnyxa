@@ -228,7 +228,7 @@ li{
     transform: translateX(100%);
   }
   .dropdown_content li{
-    margin-bottom: 70px;
+    margin-bottom: 55px;
   }
   .dropdown_content_out{
     transform: translateX(0);
